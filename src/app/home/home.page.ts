@@ -32,7 +32,7 @@ export class HomePage {
     this.init();
     File.createFile(File.dataDirectory, "test.txt", false)
       .then(FileEntry => File.writeExistingFile(File.dataDirectory, "test.txt", "PETIT JEU"))
-      .catch(err => this.response = "Erreur poto");
+      .catch(err => this.response = "Le fichier existe déja");
   }
 
   onRead() {
