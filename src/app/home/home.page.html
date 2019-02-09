@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Escaape
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding align-self-center>
+  <ion-list class="form-list" padding-start padding-end margin-top margin-bottom>
+    <ion-item margin-bottom>
+      <ion-input placeholder="Champ 1" [(ngModel)]="field1"></ion-input>
+    </ion-item>
+    <ion-item margin-bottom>
+      <ion-input placeholder="Champ 2" [(ngModel)]="field2"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button color="primary" shape="round" expand="full" margin-bottom (click)="onSubmit()">Valider</ion-button>
+  <ion-button color="light" shape="round" expand="full" margin-bottom (click)="onRead()">Valider</ion-button>
+
+  <ion-card margin-top>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      {{response}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

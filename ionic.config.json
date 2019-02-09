@@ -1,0 +1,7 @@
+{
+  "name": "escaape",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
