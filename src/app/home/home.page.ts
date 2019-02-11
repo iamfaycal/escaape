@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as Content from "../../assets/data/content.json"
+import * as Content from "../../assets/data/content.json";
 
 @Component({
   selector: 'app-home',
@@ -12,17 +12,14 @@ export class HomePage {
   field1: string;
   field2: string;
 
-  constructor(private storage: Storage) {
+  constructor() {
   }
 
   onSubmit() {
-    this.storage.get(this.field1).then((val) => {
-      if(val == this.field2) {
-        this.response = "Correct !";
-      } else {
-        this.response = "Pas correct !";
-      }
-    });
+    if(typeof Content["default"][this.field1] != 'undefined' && Content["default"][this.field1].name == this.field2) {
+      this.response = Content["default"][this.field1].content;
+    } else {
+      this.response = "Pas correct !";
+    } 
   }
-
 }

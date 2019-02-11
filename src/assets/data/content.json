@@ -1,14 +1,14 @@
 {
-    "Testeur 1" : {
+    "Testeur1" : {
         "name" : "test1",
-        "contennt" : "<p>Je suis testeur 1</p><img src='img.jpg' />"
+        "content" : "<p>Je suis testeur 1</p><img src='https://via.placeholder.com/150' />"
     },
-    "Testeur 2" : {
+    "Testeur2" : {
         "name" : "test2",
-        "content" : "<p>Je suis testeur2</p><img src='img2.jpg' />"
+        "content" : "<p>Je suis testeur2</p><img src='https://via.placeholder.com/150' />"
     },
-    "Testeur 3" : {
+    "Testeur3" : {
         "name" : "test3",
-        "content" : "<p>Je suis testeur2</p><img src='img3.jpg' />"
+        "content" : "<p>Je suis testeur2</p><img src='https://via.placeholder.com/150' />"
     }
 }
