@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { IonicStorageModule } from '@ionic/storage';
 
 import { HomePage } from './home.page';
 
@@ -17,9 +16,7 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ]),
-    IonicModule.forRoot(),
-    IonicStorageModule.forRoot()
+    ])
   ],
   declarations: [HomePage]
 })

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-home',
@@ -13,9 +12,6 @@ export class HomePage {
   field2: string;
 
   constructor(private storage: Storage) {
-    this.storage.set('Testeur1', 'Test1');
-    this.storage.set('Testeur2', 'Test2');
-    this.storage.set('Testeur3', 'Test3');
   }
 
   onSubmit() {
@@ -23,7 +19,7 @@ export class HomePage {
       if(val == this.field2) {
         this.response = "Correct !";
       } else {
-        this.response = "Pas bon !";
+        this.response = "Pas correct !";
       }
     });
   }
