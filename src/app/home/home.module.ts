@@ -17,7 +17,9 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    IonicModule.forRoot(),
+    IonicStorageModule.forRoot()
   ],
   declarations: [HomePage]
 })
