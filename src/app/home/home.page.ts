@@ -12,10 +12,10 @@ export class HomePage {
   field1: string;
   field2: string;
 
-  constructor() {
-  }
+  constructor() {}
 
   onSubmit() {
+    // SI LA COMBINAISON EST CORRECTE
     if(typeof Content["default"][this.field1] != 'undefined' && Content["default"][this.field1].name == this.field2) {
       this.response = Content["default"][this.field1].content;
     } else {
