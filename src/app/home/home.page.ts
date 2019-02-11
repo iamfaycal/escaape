@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Content from "../../assets/data/content.json"
 
 @Component({
   selector: 'app-home',
