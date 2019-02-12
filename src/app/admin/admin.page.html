@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding align-self-center>
+  <ion-item-group *ngFor="let item of obj | keyvalue">
+      <ion-item>
+        <ion-label position="floating">Nom de code</ion-label>
+        <ion-input [(ngModel)]="obj[item.key]['codename']"></ion-input>
+      </ion-item>      
+      
+      <ion-item>
+        <ion-label position="floating">Prénom</ion-label>
+        <ion-input [(ngModel)]="obj[item.key]['name']"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contenu</ion-label>
+        <ion-textarea rows="6" cols="20" [(ngModel)]="obj[item.key]['content']"></ion-textarea>
+      </ion-item>
+  </ion-item-group>
+  
+  <ion-button color="primary" shape="round" (click)="onSubmit()">Enregistrer</ion-button>
+</ion-content>
