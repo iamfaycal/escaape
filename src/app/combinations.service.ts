@@ -24,9 +24,6 @@ export class CombinationsService {
   }
 
   getCombinations():any {
-    var result;
-    this.storage.get('combinations')
-      .then((val) => { result = val; });
-    console.log(result);
+    return this.storage.get('combinations');
   }
 }
