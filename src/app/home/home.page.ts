@@ -21,32 +21,20 @@ export class HomePage {
 
   onSubmit() {
     // SI LA COMBINAISON EST CORRECTE
-    this.combinations.getCombinations()
-      .then((val) => console.log(val));
-    /*this.response = "";
+    this.response = "";
     if(this.field1 == "admin" && this.field2 == "1234") {
       this.navCtrl.navigateForward('/admin');
     } else {
-      Content.combinations.forEach((item) => {
-        if(item.codename == this.field1 && item.name == this.field2) {
-          this.response = item.content;
+      this.combinations.getCombinations().then((combinations) => {
+        combinations.forEach((item) => {
+          if(item.codename == this.field1 && item.name == this.field2) {
+            this.response = item.content;
+          }
+        });
+        if(this.response == "") {
+          this.response = "Mauvaise combinaison";
         }
       });
-      if(this.response == "") {
-        this.response = "Mauvaise combinaison";
-      }
-    }*/
-    
-    /*
-    if(typeof Content["default"][this.field1] != 'undefined') {
-      if(Content["default"][this.field1].name == this.field2) {
-        this.response = Content["default"][this.field1].content;
-      }
-    } else if(this.field1 == "admin" && this.field2 == "1234") {
-      this.navCtrl.navigateRoot('/admin');
-    } else {
-      this.response = "Pas correct !";
     }
-    */
   }
 }

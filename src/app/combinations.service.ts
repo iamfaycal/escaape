@@ -26,4 +26,8 @@ export class CombinationsService {
   getCombinations():any {
     return this.storage.get('combinations');
   }
+
+  updateCombinations(combinations) {
+    this.storage.set('combinations', combinations);
+  }
 }

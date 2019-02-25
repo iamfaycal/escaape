@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from "@ionic/angular";
-import * as Content from "../../assets/data/content.json";
+import { CombinationsService } from '../combinations.service';
 
 @Component({
   selector: 'app-admin',
@@ -11,14 +11,17 @@ export class AdminPage implements OnInit {
   
   obj: any;
   formFields = new Array();
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public combinations: CombinationsService) { }
 
   ngOnInit() {
-    this.obj = Content.combinations;           
+    this.combinations.getCombinations().then((combinationsarray) => {
+      this.obj = combinationsarray;  
+    });         
   }
 
   onSubmit() {
-    this.navCtrl.navigateRoot('/');
+    this.navCtrl.navigateRoot('/admin');
+    this.combinations.updateCombinations(this.obj);
   }
 
 }
