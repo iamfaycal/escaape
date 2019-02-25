@@ -23,5 +23,8 @@ export class AdminPage implements OnInit {
     this.navCtrl.navigateRoot('/admin');
     this.combinations.updateCombinations(this.obj);
   }
+  goBack() {
+    this.navCtrl.navigateForward('/');
+  }
 
 }
