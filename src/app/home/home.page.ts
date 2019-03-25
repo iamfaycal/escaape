@@ -20,7 +20,6 @@ export class HomePage {
   } 
 
   onSubmit() {
-    // SI LA COMBINAISON EST CORRECTE
     this.response = "";
     if(this.field1 == "admin" && this.field2 == "1234") {
       this.navCtrl.navigateForward('/admin');

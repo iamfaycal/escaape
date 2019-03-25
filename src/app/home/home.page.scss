@@ -1,7 +1,16 @@
-ion-content {
-    --padding-start: 70px;
-    --padding-end: 70px;
-    max-width: 600px;
+ion-content > ion-grid {
+    background-color: transparent;
+    background-image: url('../../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size:cover;
+} 
+ion-content > ion-grid > ion-row {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 ion-title {
     text-align: center;

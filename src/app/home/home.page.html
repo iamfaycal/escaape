@@ -1,24 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Escaape
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding align-self-center>
-  <ion-list class="form-list" padding-start padding-end margin-top margin-bottom>
-    <ion-item margin-bottom>
-      <ion-input placeholder="Champ 1" [(ngModel)]="field1"></ion-input>
-    </ion-item>
-    <ion-item margin-bottom>
-      <ion-input placeholder="Champ 2" [(ngModel)]="field2"></ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-button color="primary" shape="round" expand="full" margin-bottom (click)="onSubmit()">Valider</ion-button>
-
-  <ion-card margin-top>    
-    <ion-card-content [innerHTML]=response>
-    </ion-card-content>
-  </ion-card>
+<ion-content style="height:100vh;">
+  <ion-grid style="height:100%;">
+    <ion-row class="ion-align-items-center">
+      <ion-col size="4">
+        <ion-item>
+          <ion-label>Prénom</ion-label>
+          <ion-input [(ngModel)]="field1"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-item>
+          <ion-input placeholder="Nom de code" [(ngModel)]="field2"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button
+          color="dark"
+          expand="full"
+          margin-bottom
+          (click)="onSubmit()"
+          >Valider</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-card margin-top>
+            <ion-card-content [innerHTML]="response"> </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
