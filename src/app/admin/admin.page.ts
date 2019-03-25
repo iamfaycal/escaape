@@ -11,7 +11,7 @@ export class AdminPage implements OnInit {
   
   obj: any;
   formFields = new Array();
-  constructor(public navCtrl: NavController, public combinations: CombinationsService, private toast: Toast) { }
+  constructor(public navCtrl: NavController, public combinations: CombinationsService) { }
 
   ngOnInit() {
     this.combinations.getCombinations().then((combinationsarray) => {
@@ -22,7 +22,7 @@ export class AdminPage implements OnInit {
   onSubmit() {
     this.navCtrl.navigateRoot('/admin');
     this.combinations.updateCombinations(this.obj);
-    this.toast.show(`I'm a toast`, '5000', 'center');
+    //this.toast.show(`I'm a toast`, '5000', 'center');
   }
   goBack() {
     this.navCtrl.navigateForward('/');
