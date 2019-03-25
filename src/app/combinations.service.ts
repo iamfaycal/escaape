@@ -15,6 +15,8 @@ export class CombinationsService {
       .then((val) => {
         if(val != null) {
           result = "Ok"
+          /*this.storage.set('combinations', Content.combinations);
+          result = "Created";*/
         } else {
           this.storage.set('combinations', Content.combinations);
           result = "Created";

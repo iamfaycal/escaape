@@ -1,18 +1,28 @@
 {
     "combinations" : [
         {
-            "codename" : "Testeur1",
-            "name" : "test1",
-            "content" : "<p>Je suis testeur 1</p><img src='https://via.placeholder.com/150' />"
+            "codename" : "lynx",
+            "name" : "jessica",
+            "content" : "<p>1</p><img src='https://via.placeholder.com/150' />"
         },
         {
-            "codename" : "Testeur2",
-            "name" : "test2",
-            "content" : "<p>Je suis testeur2</p><img src='https://via.placeholder.com/150' />"
+            "codename" : "vision",
+            "name" : "marianne",
+            "content" : "<p>2</p><img src='https://via.placeholder.com/150' />"
         },
         {
-            "codename" : "Testeur3",
-            "name" : "test3",
-            "content" : "<p>Je suis testeur2</p><img src='https://via.placeholder.com/150' />"
+            "codename" : "coyote",
+            "name" : "nicole",
+            "content" : "<p>3</p><img src='https://via.placeholder.com/150' />"
+        },
+        {
+            "codename" : "loutre",
+            "name" : "yannis",
+            "content" : "<p>4</p><img src='https://via.placeholder.com/150' />"
+        },
+        {
+            "codename" : "renard",
+            "name" : "romain",
+            "content" : "<p>5</p><img src='https://via.placeholder.com/150' />"
         }]
 }

@@ -1,15 +1,25 @@
 <ion-content style="height:100vh;">
   <ion-grid style="height:100%;">
+    <ion-row style="margin-top: 300px;">
+      <ion-col>
+        <p>Pour accéder au dossier complet :</p>
+        <ol>
+          <li>Reconstituer les feuilles des rapports de mission coupées en deux.</li>
+          <li>Écrivez en toute lettre le prénom de la cible et le nom de code correspondant.</li>
+        </ol>
+      </ion-col>
+    </ion-row>
     <ion-row class="ion-align-items-center">
       <ion-col size="4">
         <ion-item>
           <ion-label>Prénom</ion-label>
-          <ion-input [(ngModel)]="field1"></ion-input>
+          <ion-input [(ngModel)]="name"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col size="4">
         <ion-item>
-          <ion-input placeholder="Nom de code" [(ngModel)]="field2"></ion-input>
+          <ion-label>Nom de code</ion-label>
+          <ion-input [(ngModel)]="codename"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col size="2">
@@ -24,9 +34,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-          <ion-card margin-top>
-            <ion-card-content [innerHTML]="response"> </ion-card-content>
-          </ion-card>
+          <ion-card *ngIf="response" [innerHTML]="response" style="background: transparent;"></ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
