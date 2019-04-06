@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Legacy17";
+    src: url("../../assets/fonts/Legacy17-Black.ttf");
+}
+@font-face {
+    font-family: "Signika";
+    src: url("../../assets/fonts/Signika-Regular.ttf");
+}
+ion-content {
+    font-family: 'Signika';
+}
 ion-content > ion-grid {
     background-color: transparent;
     background-image: url('../../assets/images/background.jpg');
@@ -29,4 +40,46 @@ ion-card {
     border-radius: 0;
     margin: 30px auto;
     max-width: 750px;
+    font-family: 'Signika';
+}
+ion-card /deep/ .card-content-md { font-size: 18px; }
+ion-card /deep/ .title { font-size: 20px; }
+ion-card /deep/ ion-card-title { font-size: 25px; }
+ion-card /deep/ .title,
+ion-card /deep/ ion-card-title {
+    font-family: 'Legacy17';
+}
+ion-card /deep/ .green,
+ion-card /deep/ ion-card-header {
+    background: #BACCCA;
+    color: #333333;
+    padding: 25px;
+}
+ion-card /deep/ hr {
+    height: 2px;
+    background: darkslategray;
+    width: 150px;
+    margin-left: 0;
+}
+ion-card /deep/ ion-card-content {
+    padding: 30px 20px;
+    background: white;
+}
+ion-card /deep/ .box-container {
+    display: flex;
+    justify-content: flex-end;
+}
+ion-card /deep/ .box-container .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+ion-card /deep/ .box-container .box.box-full {
+    background: black;
 }

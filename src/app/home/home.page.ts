@@ -32,7 +32,7 @@ export class HomePage {
           }
         });
         if(!this.response) {
-          this.response = this.sanitizer.bypassSecurityTrustHtml("<ion-card-header style='background: #BACCCA; color: #333333;'><ion-card-subtitle>Erreur</ion-card-subtitle><ion-card-title>Aucune cible ne correspond à ce prénom.</ion-card-title></ion-card-header><ion-card-content style='background: #BACCCA; color: #333333;'>Veillez à bien écrire le nom de code et le prénom uniquement.</ion-card-content>");
+          this.response = this.sanitizer.bypassSecurityTrustHtml("<ion-card-content class=results-green><p>Aucune cible ne correspond à ce prénom.<br/>Veillez à bien écrire le nom de code et le prénom uniquement.</p></ion-card-content>");
         }
       });
     }
