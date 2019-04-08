@@ -22,6 +22,7 @@ ion-content > ion-grid {
 } 
 ion-content > ion-grid > ion-row {
     margin: 0 auto;
+    max-width: 650px;
     justify-content: space-between;
     align-items: center;
 }
@@ -44,20 +45,24 @@ ion-card {
 }
 ion-card /deep/ .card-content-md { font-size: 18px; }
 ion-card /deep/ .title { font-size: 20px; }
-ion-card /deep/ ion-card-title { font-size: 25px; }
+ion-card /deep/ ion-card-title { font-size: 25px; color: white; }
+ion-card /deep/ hr {
+    
+}
+ion-card /deep/ ion-card-subtitle { color: white; }
 ion-card /deep/ .title,
 ion-card /deep/ ion-card-title {
     font-family: 'Legacy17';
 }
 ion-card /deep/ .green,
 ion-card /deep/ ion-card-header {
-    background: #BACCCA;
-    color: #333333;
+    background: #da502c;
+    color: white;
     padding: 25px;
 }
 ion-card /deep/ hr {
     height: 2px;
-    background: darkslategray;
+    background: white;
     width: 150px;
     margin-left: 0;
 }
@@ -67,7 +72,7 @@ ion-card /deep/ ion-card-content {
 }
 ion-card /deep/ .box-container {
     display: flex;
-    justify-content: flex-end;
+    padding-top: 10px; 
 }
 ion-card /deep/ .box-container .box {
     display: flex;
@@ -78,7 +83,7 @@ ion-card /deep/ .box-container .box {
     height: 50px;
     width: 50px;
     border: 1px solid black;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 ion-card /deep/ .box-container .box.box-full {
     background: black;
