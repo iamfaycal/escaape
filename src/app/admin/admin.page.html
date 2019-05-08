@@ -12,12 +12,13 @@
 
       <ion-item>
         <ion-label position="floating">Contenu</ion-label>
-        <ion-textarea rows="6" cols="20" [(ngModel)]="obj[item.key]['content']"></ion-textarea>
+        <ion-textarea
+          rows="15"
+          cols="22"
+          [ngModel]="formatHTML(obj[item.key]['content'])"
+        ></ion-textarea>
       </ion-item>
   </ion-item-group>
   <ion-button color="primary" shape="round" (click)="onSubmit()">Enregistrer</ion-button>
   <ion-button color="light" shape="round" (click)="goBack()">Retour</ion-button>
 </ion-content>
-<script>
-  
-</script><

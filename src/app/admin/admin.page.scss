@@ -9,3 +9,6 @@ ion-title {
 ion-item-group {
     margin: 20px 0 30px;
 }
+
+@import "~codemirror/lib/codemirror.css";
+@import "~codemirror/theme/material.css";
