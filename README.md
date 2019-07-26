@@ -11,4 +11,4 @@ L'utilisateur doit trouver dans le reste de l'escape game des indices pour assoc
 
 # Outils utilisés
 
-Etant développeur web, je ne voulais pas me plonger dans Android Studio pour cette application, j'ai donc chercher les autres solutions qui s'offraient à moi. J'ai découvert Ionic (basé sur Angular) et React Native, ne conaissant que Angular à cette periode j'ai décidé d'utiliser Ionic. 
+Etant développeur web, je ne voulais pas me plonger dans Android Studio pour cette application, j'ai donc chercher les autres solutions qui s'offraient à moi. J'ai découvert Ionic (basé sur Angular et TypeScript) et React Native, ne conaissant que Angular à cette periode j'ai décidé d'utiliser Ionic. 
